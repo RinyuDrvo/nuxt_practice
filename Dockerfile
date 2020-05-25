@@ -4,7 +4,7 @@ ENV PROJECT_ROOTDIR /app/
 
 WORKDIR $PROJECT_ROOTDIR
 
-# COPY package.json yarn.lock $PROJECT_ROOTDIR
+COPY package.json yarn.lock $PROJECT_ROOTDIR
 
 RUN apk update && \
   apk add git && \
