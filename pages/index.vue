@@ -12,9 +12,6 @@
     <li v-for="todo in todos" :key="todo.item">
       {{ todo.item }}
     </li>
-    <h2 class="subtitle">
-      アプリ名
-    </h2>
   </div>
 </template>
 
@@ -26,8 +23,8 @@ export default {
       todos: []
     }
   },
-  mothods: {
-    addItem (event) {
+  methods: {
+    addItem () {
       const todo = {
         item: this.newItem
       }
